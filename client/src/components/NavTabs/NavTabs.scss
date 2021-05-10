@@ -1,0 +1,162 @@
+$grey: #5d5c61;
+$olive: #379683;
+$blue: #557a95;
+$lightblue: #add8e6;
+$teal: #7395ae;
+$taupe: #b1a296;
+
+
+svg{
+    color: #ffffff;
+}
+.navbar {
+  background: $blue;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.02);
+}
+
+
+.container {
+  z-index: 1;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  // width: 0
+}
+
+.navbar-logo {
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25%, 30%);
+}
+
+.navbar-icon {
+  margin-right: 0.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.nav-item {
+  height: 80px;
+  padding-bottom: 1em;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  margin: 1rem;
+  &:hover{
+      color: $taupe;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+// @media screen and (min-width: 960px) {
+//   .navbar-container{
+//     width: 100%
+//   }
+// }
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: $blue;
+    left: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: 1;
+    padding: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-links {
+    text-align: center;
+    width: 100%;
+    display: table;
+    margin: 1em 0 1em 0;
+    padding: 0;
+    font-size: 2rem;
+    color: $taupe;
+    border-bottom: $taupe 1px solid;
+    &:hover {
+      transform: scale(1.3);
+      text-decoration: none;
+      color: $taupe;
+    }
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+}

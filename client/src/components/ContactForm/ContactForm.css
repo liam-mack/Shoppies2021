@@ -1,0 +1,48 @@
+#contactForm {
+  width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+  font-size: 1.6rem
+}
+
+#contactForm label {
+  font-size: 1rem;
+  color: #fff;
+
+}
+
+/* Defines the styling of the 4 textboxes on the contact form */
+.contactData {
+  width: 100% !important;
+  padding: 0 1rem;
+  border-radius: 30px;
+  outline: none;
+  margin: 0 !important;
+  background-color: rgb(196,196,196,1);
+  border: none;
+}
+
+/* Define text color and font size inside the your message box on the contact page */
+#elaborate{
+  font-size: 1rem;
+  height: 7em;
+}
+
+/* Defines Styling of the submit button the contact form */
+input[type="submit"] {
+  display: block;
+  width: initial;
+  background-color: rgb(196,196,196,1);
+  color: #2e368f;
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 650ms;
+  border: none;
+  margin: 0 auto 1em auto;
+}
+
+input[type="submit"]:hover {
+  color: #2e368f;
+  background-color: #ffffff;
+}

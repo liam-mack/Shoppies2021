@@ -1,0 +1,15 @@
+body, #root {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background:linear-gradient(to right, #E9F8FF, #90B2D8, #C1E3FF); */
+  background-color: #557a95;
+  
+}

@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("../../fonts/Lobster-Regular.ttf")
+  format("truetype");
+}
+
+.ContactBanner {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 42.29%,
+      #ffffff 100%
+    ),
+    url("../../images/contactBanner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 55vh;
+  background-position: 50% 30%;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+}
+
+.HomeBanner {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 42.29%,
+      #ffffff 100%
+    ),
+    url("../../images/shoppiesBanner.png");
+  min-height: 55vh;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+}
+
+.AwardsBanner {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 42.29%,
+      #ffffff 100%
+    ),
+    url("../../images/shoppiesBanner.png");
+  background-size: cover;
+  min-height: 55vh;
+  background-position: 50% 30%;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+}
+
+.NominationsBanner {
+  background: 
+    url("../../images/nominationsBanner.jpg");
+  background-size: cover;
+  min-height: 55vh;
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+}
+.SearchBanner {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 42.29%,
+      #ffffff 100%
+    ),
+    url("../../images/searchBanner.jpg");
+  background-size: cover;
+  min-height: 55vh;
+  background-position: 50% 15%;
+}
+
+.BannerImage {
+  position: relative;
+  max-height: 55vh;
+  object-fit: none;
+  object-position: 50% 30%;
+}
+
+.BannerTitle {
+  font-family: cursive;
+  color: #ffffff;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  font-family: "Lobster";
+  text-shadow: black 0px 0px 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.BannerDescription {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: 1.2em;
+  /* font-size: 1.2em; */
+  text-align: center;
+}
+
+@media screen and (max-width: 580px) {
+  .NominationsBanner {
+    background-position: 80% 35%;
+  }
+  .BannerTitle{
+      font-size: 2em;
+      top: 36%;
+  }
+}

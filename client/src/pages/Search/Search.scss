@@ -1,0 +1,48 @@
+/* Search Form from Search page */
+
+form,
+#results,
+.alert {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+form input {
+  width: 50%;
+}
+
+.form-group {
+  margin-top: 2em;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-deck{
+  margin-bottom: 4em;
+}
+
+.searchBegin {
+  color: #fff;
+}
+
+.resultCount {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .form-group {
+    display: flex;
+  }
+  .form-control {
+    width: 50%;
+    margin-left: 1em;
+  }
+}
+
+.btn-success {
+  max-height: 38px !important;
+}
+
+.nominationCount {
+  margin-top: 1em;
+}

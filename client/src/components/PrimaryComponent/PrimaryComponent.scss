@@ -1,0 +1,159 @@
+$grey: #5d5c61;
+$olive: #379683;
+$blue: #557a95;
+$lightblue: #ADD8e6;
+$teal: #7395ae;
+$taupe: #b1a296;
+
+.white {
+  background-color: #ffffff;
+}
+
+.grey {
+  background-color: $grey;
+}
+
+.olive {
+  background-color: $olive;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.lightblue {
+  background-color: $lightblue;
+}
+
+.taupe {
+  background-color: $taupe;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url("../../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")format("truetype");
+}
+
+h1{
+  font-family: 'Fraunces';
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+p,
+a,
+label,
+input {
+  font-family: "Montserrat";
+}
+
+p + p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix: increase padding-bottom on smaller viewports */
+.primary__hero-section {
+  color: #fff;
+  padding-bottom: 2em;
+}
+
+.primary__hero-row {
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  margin-bottom: -15px;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+/* Fix: Margin misaligns multipictures */
+.column {
+  display: flex;
+  margin: 0 1em 1em 1em;
+  flex: 1;
+  flex-basis: 40%;
+}
+
+.primary__hero-text-wrapper {
+  padding-top: 0;
+  padding-bottom: 60px;
+  max-width: 556px;
+}
+
+.heading {
+  margin: 24px 0 24px 0;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #f7f8fa;
+}
+
+.subHeading {
+  font-size: 40px;
+}
+
+.dark {
+  color: #1c2237;
+}
+
+.primary__hero-subtitle {
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.primary__hero-img-wrapper {
+  max-width: 555px;
+  text-align: center;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.componentContainer {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .componentContainer {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .primary__hero-section {
+    text-align: center;
+  }
+  .primary__hero-img {
+    margin: auto;
+  }
+
+  .col {
+    max-width: 100%;
+    min-width: 100%;
+    display: block !important;
+    margin: 0 0 2em 0;
+  }
+}
+
+.primary__pic-img {
+  max-width: 70%;
+  max-height: 400px;
+  min-width: 15em;
+  border-radius: 5px;
+  margin-top: 1em !important;
+  display: block;
+  margin: auto;
+}
+

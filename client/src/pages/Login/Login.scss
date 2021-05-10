@@ -1,0 +1,117 @@
+$white: #fff;
+$red: #ff3000;
+$light-blue: #Add8E6;
+$blue: #557a95;
+
+.home {
+  background-image: url("../../images/loginBg.gif");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+button,
+input:focus {
+  outline: none !important;
+}
+
+.loginBtn {
+  background: linear-gradient(to right, $blue 0%, $light-blue 50%, $red 100%);
+  background-size: 500%;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font: 1.5em Raleway, sans-serif;
+  margin: 0 1em 0 1em;
+  padding: 0.2em 0.5em;
+  &:hover {
+    animation-name: gradient;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  &:active {
+    color: $red;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.loginForm {
+  margin: 10em auto 0 auto;
+  width: 450px;
+  height: 350px;
+  z-index: 15;
+  background: $white;
+  border-radius: 20%;
+  padding: 1em;
+  border: 5px solid $red;
+}
+
+label {
+  padding-left: 1em;
+}
+
+input[type="text"] {
+  height: 20px;
+  margin-bottom: 15px;
+  width: 200px;
+  margin-left: 10px;
+  padding: 0.8em;
+  border-radius: 20px;
+}
+
+input[name="password"] {
+  height: 20px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 0.8em;
+  margin: 0 1em 15px 30px;
+}
+.formBtn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+// .loginBtn{
+// }
+
+// .signupBtn{
+// }
+
+// .backBtn{
+// }
+
+@media screen and (max-width: 475px) {
+  .loginForm {
+    height: 400px;
+    width: 90%;
+    p {
+      font-size: 0.8em;
+    }
+    input {
+      width: 90%;
+      padding: 1;
+      margin: 0;
+    }
+    button {
+      padding: 0.2em;
+      margin: 0.2em;
+      span {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}

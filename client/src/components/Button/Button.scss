@@ -1,0 +1,118 @@
+$grey: #5d5c61;
+$olive: #379683;
+$blue: #557a95;
+$lightblue: #ADD8e6;
+$teal: #7395ae;
+$taupe: #b1a296;
+
+:root {
+    --primary: #ffffff
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 900;
+}
+
+.btn--primary {
+    margin: 1em 0.75em
+} 
+
+.btn--outline {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+.btn-medium {
+    padding: 8px 20px;
+    font-size: 18px
+}
+
+.btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+}
+
+.btn--mobile{
+    text-align: center;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 14px 20px;
+    border: 1px solid #ffffff;
+    transition:  all 0.3s ease-out;
+}
+
+.btn--wide {
+    padding: 12px 64px;
+    font-size: 20px;
+}
+
+.btn--large:hover, .btn--medium:hover, .btn--mobile:hover{
+    transition: all 0.3s ease-out;
+    background: #ffffff;
+    color: #242424; 
+}
+
+
+.blueBtn {
+    background-color: $blue;
+    color: $taupe;
+    border: none;
+    &:hover{
+        background-color: $taupe;
+        color: $blue;
+    }
+}
+
+.tealBtn {
+    background-color: $teal;
+    color: #ffffff;
+    border: none;
+}
+
+.taupeBtn {
+    background-color: $taupe;
+    color: $blue;
+    border: none;
+    &:hover{
+        // background-color: $blue;
+        color: $blue;
+    }
+}
+
+
+.whiteBtn {
+    background-color: #ffffff;
+    color: #242424;
+    border: none
+}
+
+.greyBtn {
+    background-color: $grey;
+    color: #242424;
+    border: none;
+}
+
+.primary:hover {
+    background-color: #ffffff;
+    color: #242424;
+    border: none
+}
+
+@media screen and (min-width: 784px) {
+    .peachBtn {
+        background-color: #ffffff;
+    }
+}
