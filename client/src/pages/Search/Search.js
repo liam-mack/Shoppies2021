@@ -39,6 +39,8 @@ function Search() {
   const count = useSelector((state) => state.count);
   const dispatch = useDispatch();
 
+  dispatch({ type: "SETUSER" });
+
   // Track value of input(search) box
   function handleInputChange(event) {
     const { value } = event.target;
@@ -64,8 +66,8 @@ function Search() {
     setMovies(movies.filter((element) => element !== movie));
     // Emit a message to all other connected clients what movie was saved
     socket.emit("saved", movie);
-    // dispatch({ type: "INCREMENT" });
-    dispatch({ type: "SETUSER" });
+    dispatch({ type: "INCREMENT" });
+    // dispatch({ type: "SETUSER" });
   }
 
   function nominationAlert() {
