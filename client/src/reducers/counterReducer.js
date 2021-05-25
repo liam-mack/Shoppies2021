@@ -3,15 +3,19 @@ import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import API from "../utils/API";
 
+let userCount;
+
+
 async function getNomCount() {
+  // const userNoms = API.getNominations()
   await API.getNominations().then((result) => {
-    console.log(result.data + 1);
+    // console.log("Total nominations: " + result);
+    userCount = result
+    return result
   });
 }
 
-// const { data } = getNomCount()
-
-// track state and persist through local storage (MVP only)
+// track state and persist through local storage
 const initialState = {
   loading: false,
   count: 0,
@@ -26,12 +30,13 @@ const persistConfig = {
 function counterReducer(state = initialState, action) {
   switch (action.type) {
     case "INCREMENT":
-      return { count: state.count + 1 };
+      return getNomCount(),{ count: state.count + 1 };
     case "DECREMENT":
-      return { count: state.count - 1 };
+      return getNomCount(),{ count: state.count - 1 };
     case "SETUSER":
-      // return  { count: getNomCount()}
-      return getNomCount(), {count: state.count + 1};
+      console.log(userCount);
+      return getNomCount(), {count: userCount}
+      // {count: userCount};
     default:
       return state;
   }

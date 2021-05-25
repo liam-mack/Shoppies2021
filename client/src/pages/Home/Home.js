@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { useDispatch } from "react-redux";
 import React from "react";
 import PrimaryComponent from "../../components/PrimaryComponent/PrimaryComponent";
 import BannerImage from "../../components/BannerImage/BannerImage";
@@ -9,6 +10,9 @@ import {homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive} from "./
 
 // Home page component, rendering code page components and descriptions/links to other pages
 function Home() {
+  const dispatch = useDispatch();
+  dispatch({ type: "SETUSER" });
+
   return (
     <div>
       <ScrollToTopOnMount />

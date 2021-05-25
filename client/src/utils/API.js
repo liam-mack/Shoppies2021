@@ -18,7 +18,7 @@ export default {
   async getNominations() {
     try {
       const response = await axios.get("/api/nominations");
-      return response;
+      return response.data;
     } catch (error) {
       console.log(error);
       return false;
