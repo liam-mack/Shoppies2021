@@ -17,7 +17,7 @@
 >MERN stack application for saving movie nominations
 
 ## Keywords
->*Mongo, Mongoose, ExpressJS, ReactJS, NodeJS, Redux, Socket-io, MERN*
+>*Mongo, Mongoose, ExpressJS, ReactJS, NodeJS, Redux, SCSS, Socket-io, MERN*
 
 ## Contributors
 >Liam Mackinnon
