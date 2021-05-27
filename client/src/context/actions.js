@@ -2,8 +2,8 @@
 
 // Configure below depending on local or heroku environment
 
-// const ROOT_URL = "https://shoppies-2021.herokuapp.com";
-const ROOT_URL = "http://localhost:3000";
+const ROOT_URL = "https://shoppies-2021.herokuapp.com";
+// const ROOT_URL = "http://localhost:3000";
 
 // Post request handling user login with passport local strategy
 export async function loginUser(dispatch, loginPayload) {
